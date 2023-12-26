@@ -1,0 +1,144 @@
+@font-face {
+    font-family: GSBold;
+    src: url(../../fonts/GS-Bold.TTF);
+}
+
+@font-face {
+    font-family: GoogleSans;
+    src: url(../fonts/GoogleSans.TTF);
+}
+
+body {
+    background-color: #181a1b;
+    color: white;
+    font-family: GoogleSans;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #202324;
+    padding: 10px;
+    z-index: 9999; /* Ensure the header appears on top of other elements */
+}
+
+#panel {
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    background-color: #202324; /* Updated background color */
+    padding: 20px;
+}
+
+#links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#links li {
+    display: inline;
+    margin-right: 100px; /* Increased margin-right */
+}
+
+#links li:last-child {
+    margin-right: 0;
+}
+
+#links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all;
+    transition-duration: 150ms;
+    font-family: GoogleSans;
+}
+
+#links a:hover {
+    font-size: 24px;
+    transition: all;
+    transition-duration: 300ms;
+    font-family: GoogleSans;
+}
+
+#links a.current {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: GoogleSans;
+}
+
+#links a:hover.current {
+    font-size: 24px;
+    font-family: GoogleSans;
+}
+
+#main-content {
+    margin-top: 100px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    font-family: GoogleSans;
+}
+
+#sectionleft {
+    width: 60%;
+    padding-bottom: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: GoogleSans;
+}
+
+.video {
+    position: relative;
+    top: 25%;
+    font-family: GoogleSans;
+}
+
+#sectionright {
+    margin-top: 10%;
+    width: 40%;
+    padding-bottom: 13%;
+    padding-right: 8%;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    font-family: GoogleSans;
+}
+
+.dwlbutton {
+    position: relative;
+    left: 28%;
+    top: 50%;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 195, 255);
+    font-family: GSBold;
+    font-size: 24px;
+}
+
+.dwlbutton:hover {
+    cursor: pointer;
+}
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+    font-family: GSBold;
+    color: white
+}
+
+.author {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: GoogleSans;
+    color: white
+}

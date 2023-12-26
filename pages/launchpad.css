@@ -1,0 +1,117 @@
+@font-face {
+    font-family: GSBold;
+    src: url(../fonts/GS-Bold.TTF);
+}
+
+@font-face {
+    font-family: GoogleSans;
+    src: url(../fonts/GoogleSans.TTF);
+}
+
+body {
+    background-color: #181a1b;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #202324;
+    padding: 10px;
+    z-index: 9999; /* Ensure the header appears on top of other elements */
+}
+
+#panel {
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    background-color: #202324; /* Updated background color */
+    padding: 20px;
+}
+
+#links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#links li {
+    display: inline;
+    margin-right: 100px; /* Increased margin-right */
+}
+
+#links li:last-child {
+    margin-right: 0;
+}
+
+#links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all;
+    transition-duration: 150ms;
+    font-family: GoogleSans;
+}
+
+#links a:hover {
+    font-size: 24px;
+    transition: all;
+    transition-duration: 300ms;
+    font-family: GoogleSans;
+}
+
+#links a.current {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: GoogleSans;
+}
+
+#links a:hover.current {
+    font-size: 24px;
+    font-family: GoogleSans;
+}
+
+#main-content {
+    margin-top: 100px;
+    padding: 20px;
+    position: relative;
+    font-family: GoogleSans;
+}
+
+.entry {
+    width: 24%;
+    border: solid;
+    border-radius: 10px;
+    border-color: #4e4e4e;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: GoogleSans;
+}
+
+.entry .title {
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    font-family: GSBold;
+    color: white
+}
+
+.entry span {
+    margin-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: GoogleSans;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

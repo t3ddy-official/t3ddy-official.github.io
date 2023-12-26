@@ -1,0 +1,80 @@
+@font-face {
+    font-family: GoogleSans;
+    src: url(../fonts/GoogleSans.TTF);
+}
+
+body {
+    background-color: #181a1b;
+    color: white;
+    font-family: GoogleSans;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #202324;
+    padding: 10px;
+    z-index: 9999; /* Ensure the header appears on top of other elements */
+}
+
+#panel {
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    background-color: #202324; /* Updated background color */
+    padding: 20px;
+}
+
+#links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#links li {
+    display: inline;
+    margin-right: 100px; /* Increased margin-right */
+}
+
+#links li:last-child {
+    margin-right: 0;
+}
+
+#links a {
+    font-family: GoogleSans;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all;
+    transition-duration: 150ms;
+}
+
+#links a:hover {
+    font-family: GoogleSans;
+    font-size: 24px;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+#links a.current {
+    font-family: GoogleSans;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+#links a:hover.current {
+    font-family: GoogleSans;
+    font-size: 24px;
+}
+
+#main-content {
+    font-family: GoogleSans;
+    margin-top: 100px;
+    padding: 20px;
+    position: relative;
+}
