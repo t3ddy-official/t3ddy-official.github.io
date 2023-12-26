@@ -78,3 +78,12 @@ header {
     padding: 20px;
     position: relative;
 }
+
+.header {
+    font-size: 24px;
+}
+
+#main-content a {
+    text-decoration: none;
+    color: rgb(0, 217, 255);
+}
